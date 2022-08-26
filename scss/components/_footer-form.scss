@@ -1,0 +1,28 @@
+.footer-form {
+    margin-left: auto;
+}
+
+.fooer-form__set {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.fooer-form__input {
+    width: 358px;
+    background-color: transparent;
+    border: 1px rgba(255, 255, 255, 0.3) solid;
+    border-radius: 4px;
+    outline: transparent;
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 1.25;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}

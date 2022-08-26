@@ -1,0 +1,18 @@
+
+  .benefits__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .benefits__beg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--color-background-team);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .benefits__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

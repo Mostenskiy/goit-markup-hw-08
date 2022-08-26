@@ -1,0 +1,12 @@
+.header {
+    letter-spacing: 0.02em;
+    line-height: 1.142;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: 1px solid var(--color-portfolio-border);
+}
+
+.header__container {
+    display: flex;
+    align-content: center;
+}
