@@ -305,16 +305,32 @@ p {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /*padding-top: 94px;
+    padding-bottom: 94px;*/
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .button {
@@ -1034,6 +1050,7 @@ section {
   font-size: 14px;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--color-white);
+  width: 340px;
 }
 
 .team {
