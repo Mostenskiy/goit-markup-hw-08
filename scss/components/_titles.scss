@@ -1,11 +1,19 @@
 .section-title {
-  margin-bottom: 50px;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
   color: var(--color-black);
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+
+  }
+
 }
 
 .hero__title {
@@ -32,7 +40,7 @@
   color: var(--color-black);
 }
 
-.footer-title {
+.footer-title { 
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -41,6 +49,12 @@
   text-transform: uppercase;
   color: var(--color-white);
   margin-bottom: 20px;
+  margin-top: 60px;
+  
+@media screen and (min-width: 1200px){
+  margin-top: 0px;
+   
+}
 }
 
 

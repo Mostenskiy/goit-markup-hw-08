@@ -40,7 +40,7 @@
     }
 }
 
-.footer__kontakt-item__link {
+.footer__kontakt-link {
     transition-property: color;
     transition-duration: var(--transition-time);
     transition-timing-function: var(--transition-function);
@@ -51,6 +51,9 @@
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+   
+   
+   
     &:hover,
     &:focus {
     color: var(--color-white);
