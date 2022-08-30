@@ -1,15 +1,23 @@
 .footer-form {
-    margin-left: auto;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .fooer-form__set {
-    display: flex;
-    gap: 12px;
-    align-items: center;
+    display: block;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+    }
 }
 
 .fooer-form__input {
-    width: 358px;
+    width: 100%;
     background-color: transparent;
     border: 1px rgba(255, 255, 255, 0.3) solid;
     border-radius: 4px;
@@ -20,9 +28,19 @@
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px){width: 450px;
 
-
+  
+    }
     &::placeholder {
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+        width: 358px;
+    }
+
+
 }

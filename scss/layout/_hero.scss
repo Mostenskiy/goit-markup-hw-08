@@ -1,9 +1,28 @@
 .hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/imeges/home/Img-hirow-mob.jpg);
+    background-size: 480px 400px;
+    padding-top:118px;
+    padding-bottom: 118px;
+  @media screen and (min-width: 768px) {
     padding-top: 200px;
     padding-bottom: 200px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
     background-size: 1600px 600px;
-    background-position: center;
-    background-repeat: no-repeat;
   }
+
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
+    background-size: 1600px 600px;
+
+  }
+
+
+}
