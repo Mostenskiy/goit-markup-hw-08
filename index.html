@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Разработка сайтов под ключ" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body data-page>
-    <!-- Header section
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Разработка сайтов под ключ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body data-page>
+  <!-- Header section-->
   <header class="header">
     <div class="container header__container">
       <a class="logo header__logo link" href="" lang="en">Web<span class="header__logo--accent">Studio</span></a>
+      <button class="mob-menu__btg" type="button" data-menu-open>
+        <svg class="mob-menu__icon" width="24px" height="16px">
+          <use href="/imeges/icomoon.svg#mob-menu"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list list">
           <li class="nav__item">
@@ -34,14 +38,14 @@
       </nav>
       <ul class="header__list-cont list">
         <li class="header__item-cont">
-          <a class="header__item-cont__link link" href="mailto:info@devstudio.com"><svg class="header__item-cont__link-icon " width="16"
-              height="16">
+          <a class="header__item-cont__link link" href="mailto:info@devstudio.com"><svg
+              class="header__item-cont__link-icon" width="16" height="16">
               <use href="./imeges/icomoon.svg#envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li class="header__item-cont">
           <a class="header__item-cont__link link" href="tel:+380961111111">
-            <svg class="header__item-cont__link-icon " width="16" height="16">
+            <svg class="header__item-cont__link-icon" width="16" height="16">
               <use href="./imeges/icomoon.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
@@ -49,10 +53,10 @@
       </ul>
     </div>
   </header>
-  -->
-    <!-- Main section -->
-    <main class="main">
-      <!-- Hirow  section  -->
+
+  <!-- Main section -->
+  <main class="main">
+    <!-- Hirow  section  -->
     <section class="hero section">
       <div class="container">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -61,369 +65,324 @@
         </button>
       </div>
     </section>
-   
-      <!-- Benefits section -->
-      <section class="benefits section">
-        <div class="container">
-          <ul class="benefits__list card-cet list">
-            <li class="benefits__item">
-              <div class="benefits__beg">
-                <svg class="benefits__icon" width="65" height="70">
-                  <use href="./imeges/icomoon.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="benefits__desc">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__beg">
-                <svg class="benefits__icon" width="70" height="70">
-                  <use href="./imeges/icomoon.svg#clock"></use>
-                </svg>
-              </div>
-              <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="benefits__desc">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__beg">
-                <svg class="benefits__icon" width="70" height="53">
-                  <use href="./imeges/icomoon.svg#diagram"></use>
-                </svg>
-              </div>
-              <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
-              <p class="benefits__desc">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="benefits__item">
-              <div class="benefits__beg">
-                <svg class="benefits__icon" width="70" height="70">
-                  <use href="./imeges/icomoon.svg#astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="benefits__desc">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- aboot section  -->
+
+    <!-- Benefits section -->
+    <section class="benefits section">
+      <div class="container">
+        <ul class="benefits__list card-cet list">
+          <li class="benefits__item">
+            <div class="benefits__beg">
+              <svg class="benefits__icon" width="65" height="70">
+                <use href="./imeges/icomoon.svg#antenna"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="benefits__desc">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__beg">
+              <svg class="benefits__icon" width="70" height="70">
+                <use href="./imeges/icomoon.svg#clock"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="benefits__desc">
+              Завдання організації, особливо рамки і місце навчання кадрів
+              тягне у себе.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__beg">
+              <svg class="benefits__icon" width="70" height="53">
+                <use href="./imeges/icomoon.svg#diagram"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
+            <p class="benefits__desc">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__beg">
+              <svg class="benefits__icon" width="70" height="70">
+                <use href="./imeges/icomoon.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="benefits__desc">
+              Значимість цих проблем настільки очевидна, що реалізація
+              планових завдань.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- aboot section  -->
     <section class="aboot section">
       <div class="container">
-        <h2 class="section-title ">Чем мы занимаемся</h2>
+        <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="aboot__list card-cet list">
           <li class="aboot__item">
             <div class="aboot__img-set">
-              <img class="aboot_img" src="./imeges/home/img-1.jpg" alt="Програмист пишет код" width="370"
+              <picture>
+                <source media="(min-width: 1200)" srcset="
+                ./imeges/abult/abult-1@1x_d.jpg 1x, 
+                ./imeges/abult/abult-1@2x_d.jpg 2x "
+                />
+              <img class="aboot_img" src="./imeges/abult/abult-1@1x_d.jpg " alt="Програмист пишет код" width="370"
                 height="294" />
+              </picture>
               <h3 class="aboot__title">Десктопні додатки</h3>
             </div>
           </li>
           <li class="aboot__item">
             <div class="aboot__img-set">
-              <img class="aboot__mg" src="./imeges/home/img-2.jpg" alt="Веб дизайнер работает" width="370"
+              <picture>
+                <source media="(min-width: 1200)" srcset="
+                ./imeges/abult/abult-2@1x_d.jpg 1x, 
+                ./imeges/abult/abult-2@2x_d.jpg 2x "
+                />
+              <img class="aboot_img" src="./imeges/abult/abult-2@1x_d.jpg " alt="Програмист пишет код" width="370"
                 height="294" />
+              </picture>
               <h3 class="aboot__title">Мобільні додатки</h3>
             </div>
           </li>
           <li class="aboot__item">
             <div class="aboot__img-set">
-              <img class="aboot__img" src="./imeges/home/img-3.jpg" alt="Поиск цвета на политре красок" width="370"
+              <picture>
+                <source media="(min-width: 1200)" srcset="
+                ./imeges/abult/abult-3@1x_d.jpg 1x, 
+                ./imeges/abult/abult-3@2x_d.jpg 2x "
+                />
+              <img class="aboot_img" src="./imeges/abult/abult-3@1x_d.jpg " alt="Програмист пишет код" width="370"
                 height="294" />
+              </picture>
               <h3 class="aboot__title">Мобільні додатки</h3>
             </div>
           </li>
         </ul>
       </div>
     </section>
- 
-      <!-- team section -->
-      <section class="team section">
-        <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="team__list card-cet list">
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./imeges/nk/img-1-mob.jpg"
-                alt="Игорь Демьяненко"
-                width="450"
-                height="460"
-              />
-              <div class="team__wrapper">
-                <h3 class="team__name">Игорь Демьяненко</h3>
-                <p class="team__desc" lang="en">Product Designer</p>
-                <ul class="social__list list">
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="instagram"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="twitter"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="facebook"
-                    >
-                      <svg class="social__icon" width="20px" height="20px">
-                        <use href="./imeges/icomoon.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="linkedin"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./imeges/nk/img-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
-              <div class="team__wrapper">
-                <h3 class="team__name">Ольга Репина</h3>
-                <p class="team__desc" lang="en">Frontend Developer</p>
-                <ul class="social__list list">
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="instagram"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="twitter"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="facebook"
-                    >
-                      <svg class="social__icon" width="20px" height="20px">
-                        <use href="./imeges/icomoon.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="linkedin"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./imeges/nk/img-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
-              <div class="team__wrapper">
-                <h3 class="team__name">Николай Тарасов</h3>
-                <p class="team__desc" lang="en">Marketing</p>
-                <ul class="social__list list">
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="instagram"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="twitter"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="facebook"
-                    >
-                      <svg class="social__icon" width="20px" height="20px">
-                        <use href="./imeges/icomoon.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="linkedin"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team__item">
-              <img
-                class="team__img"
-                src="./imeges/nk/img-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
-              <div class="team__wrapper">
-                <h3 class="team__name">Михаил Ермаков</h3>
-                <p class="team__desc" lang="en">UI Designer</p>
-                <ul class="social__list list">
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="instagram"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="twitter"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="facebook"
-                    >
-                      <svg class="social__icon" width="20px" height="20px">
-                        <use href="./imeges/icomoon.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a
-                      class="social__link link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="linkedin"
-                    >
-                      <svg class="social__icon" width="20" height="20">
-                        <use href="./imeges/icomoon.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
 
-      <!-- client section -->
+    <!-- team section -->
+    <section class="team section">
+      <div class="container">
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="team__list card-cet list">
+          <li class="team__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+              ./imeges/tim/tim-1@1x_d.jpg 1x, 
+              ./imeges/tim/tim-1@2x_d.jpg 2x"
+              />
+              <source media="(min-width: 768px)" srcset="
+              ./imeges/tim/tim-1@1x_t.jpg 1x, 
+              ./imeges/tim/tim-1@2x_t.jpg 2x"
+              />
+              <source media="(min-width: 420px)" srcset="
+              ./imeges/tim/tim-1@1x_m.jpg 1x, 
+              ./imeges/tim/tim-1@2x_m.jpg 2x"
+              />
+            <img class="team__img" src=" ./imeges/tim/tim-1@1x_m.jpg" alt="Игорь Демьяненко" width="450" height="460" />
+          </picture>
+           
+            <div class="team__wrapper">
+              <h3 class="team__name">Игорь Демьяненко</h3>
+              <p class="team__desc" lang="en">Product Designer</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                    <svg class="social__icon" width="20px" height="20px">
+                      <use href="./imeges/icomoon.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+              ./imeges/tim/tim-2@1x_d.jpg 1x, 
+              ./imeges/tim/tim-2@2x_d.jpg 2x"
+              />
+              <source media="(min-width: 768px)" srcset="
+              ./imeges/tim/tim-2@1x_t.jpg 1x, 
+              ./imeges/tim/tim-2@2x_t.jpg 2x"
+              />
+              <source media="(min-width: 420px)" srcset="
+              ./imeges/tim/tim-2@1x_m.jpg 1x, 
+              ./imeges/tim/tim-2@2x_m.jpg 2x"
+              />
+            <img class="team__img" src="./imeges/tim/tim-2@1x_m.jpg" alt="Ольга Репина" width="450" height="460" />
+          </picture>
+            <div class="team__wrapper">
+              <h3 class="team__name">Ольга Репина</h3>
+              <p class="team__desc" lang="en">Frontend Developer</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                    <svg class="social__icon" width="20px" height="20px">
+                      <use href="./imeges/icomoon.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+              ./imeges/tim/tim-3@1x_d.jpg 1x, 
+              ./imeges/tim/tim-3@2x_d.jpg 2x"
+              />
+              <source media="(min-width: 768px)" srcset="
+              ./imeges/tim/tim-3@1x_t.jpg 1x, 
+              ./imeges/tim/tim-3@2x_t.jpg 2x"
+              />
+              <source media="(min-width: 420px)" srcset="
+              ./imeges/tim/tim-3@1x_m.jpg 1x, 
+              ./imeges/tim/tim-3@2x_m.jpg 2x"
+              />
+            <img class="team__img" src="./imeges/tim/tim-3@1x_m.jpg" alt="Николай Тарасов" width="450" height="460"/>
+          </picture>
+            <div class="team__wrapper">
+              <h3 class="team__name">Николай Тарасов</h3>
+              <p class="team__desc" lang="en">Marketing</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                    <svg class="social__icon" width="20px" height="20px">
+                      <use href="./imeges/icomoon.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="team__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+              ./imeges/tim/tim-4@1x_d.jpg 1x, 
+              ./imeges/tim/tim-4@2x_d.jpg 2x"
+              />
+              <source media="(min-width: 768px)" srcset="
+              ./imeges/tim/tim-4@1x_t.jpg 1x, 
+              ./imeges/tim/tim-4@2x_t.jpg 2x"
+              />
+              <source media="(min-width: 420px)" srcset="
+              ./imeges/tim/tim-4@1x_m.jpg 1x, 
+              ./imeges/tim/tim-4@2x_m.jpg 2x"
+              />
+            <img class="team__img" src="./imeges/tim/tim-4@1x_m.jpg" alt="Михаил Ермаков" width="450" height="460" />
+          </picture>
+            <div class="team__wrapper">
+              <h3 class="team__name">Михаил Ермаков</h3>
+              <p class="team__desc" lang="en">UI Designer</p>
+              <ul class="social__list list">
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
+                    <svg class="social__icon" width="20px" height="20px">
+                      <use href="./imeges/icomoon.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+                    <svg class="social__icon" width="20" height="20">
+                      <use href="./imeges/icomoon.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- client section -->
     <section class="client section">
       <div class="container">
         <h2 class="section-title">Постійні клієнти</h2>
@@ -473,9 +432,8 @@
         </ul>
       </div>
     </section>
-  
-    </main>
-    <!-- Footer section -->
+  </main>
+  <!-- Footer section -->
   <footer class="footer">
     <div class="container">
       <div class="footer-card-cet">
@@ -497,7 +455,7 @@
           </address>
         </div>
         <div class="footer__social">
-          <p class="footer-title footer__social-title ">приєднуйтесь</p>
+          <p class="footer-title footer__social-title">приєднуйтесь</p>
           <ul class="social__list list">
             <li class="social__item">
               <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
@@ -515,14 +473,14 @@
             </li>
             <li class="social__item">
               <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook">
-                <svg class="footer__social-icon " width="20px" height="20px">
+                <svg class="footer__social-icon" width="20px" height="20px">
                   <use href="./imeges/icomoon.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                <svg class="footer__social-icon " width="20" height="20">
+                <svg class="footer__social-icon" width="20" height="20">
                   <use href="./imeges/icomoon.svg#linkedin"></use>
                 </svg>
               </a>
@@ -531,7 +489,7 @@
         </div>
         <div class="footer-form">
           <form class="footer_form">
-            <strong class="footer-title ">Підпишіться на розсилку</strong>
+            <strong class="footer-title">Підпишіться на розсилку</strong>
             <div class="fooer-form__set">
               <input class="fooer-form__input" type="email" id="footer-user-email" placeholder="E-mail" />
 
@@ -547,8 +505,8 @@
       </div>
     </div>
   </footer>
-  
-    <!--modal window 
+
+  <!--modal window  !-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__btn" data-modal-close>
@@ -582,7 +540,8 @@
           </div>
           <div class="form-modal__group">
             <label class="form-modal__labe" for="user-comment">Коментар</label>
-            <textarea class="form-modal__input form-modal__input-comment" id="user-comment" placeholder="Введіть текст"></textarea>
+            <textarea class="form-modal__input form-modal__input-comment" id="user-comment"
+              placeholder="Введіть текст"></textarea>
           </div>
         </div>
         <label class="form-modal__check-label">
@@ -595,12 +554,59 @@
             <a class="form-modal__check-link link" href="">Умови договору</a></span>
         </label>
         <div class="modal-form-button-wrapper">
-          <button class="form-modal__button button" type="submit">Відправити</button>
+          <button class="form-modal__button button" type="submit">
+            Відправити
+          </button>
         </div>
       </form>
     </div>
   </div>
-  !-->
-    <script src="./js/modal.js"></script>
-  </body>
+  <!--Mobile menu-->
+  <div class="menu-overlay" data-menu>
+    <div class="menu-container">
+      <button class="menu-of__btg mob-menu__btg" type="button" data-menu-close>
+        <svg class="menu-of__icon" width="24px" height="24px">
+          <use href="/imeges/icomoon.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mob-nav__list mob__card-set list">
+        <li class="mob-nav__item">
+          <a class="mob-nav__link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mob-nav__item">
+          <a class="mob-nav__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mob-nav__item">
+          <a class="mob-nav__link link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mob-cont__list mob__card-set list">
+        <li class="mob-cont__item">
+          <a class="mob-cont__link link" href="tel:+380961111111">
+           <span class="mob-cont__link--akcent"> +38 096 111 11 11</span></a>
+        </li>
+        <li class="mob-cont__item">
+          <a class="mob-cont__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mob-social__list list">
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">Instagram</a>
+        </li>
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">Twitter</a>
+        </li>
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">Facebook</a>
+        </li>
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobail-menu.js"></script>
+</body>
+
 </html>

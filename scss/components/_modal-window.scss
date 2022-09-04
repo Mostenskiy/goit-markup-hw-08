@@ -18,8 +18,8 @@
     pointer-events: none;
   }
   .modal {
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     border-radius: 4px;
     background-color: #ffffff;
     padding: 40px;
@@ -29,6 +29,13 @@
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     transition: transform 500ms ease-in-out 250ms, opacity 500ms ease-in-out 250ms;
+        
+    @media screen and (min-width: 1200px){
+      width: 528px;
+    height: 581px;
+       
+    }
+
   }
   .backdrop.is-hidden .modal {
     opacity: 0;

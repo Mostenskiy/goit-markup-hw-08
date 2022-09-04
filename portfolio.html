@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="description" content="Разработка сайтов под ключ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +18,11 @@
   <header class="header">
     <div class="container header__container">
       <a class="logo header__logo link" href="" lang="en">Web<span class="header__logo--accent">Studio</span></a>
+      <button class="mob-menu__btg" type="button" data-menu-open>
+        <svg class="mob-menu__icon" width="24px" height="16px">
+          <use href="/imeges/icomoon.svg#mob-menu"></use>
+        </svg>
+      </button>
       <nav class="nav">
         <ul class="nav__list list">
           <li class="nav__item">
@@ -32,14 +38,14 @@
       </nav>
       <ul class="header__list-cont list">
         <li class="header__item-cont">
-          <a class="header__item-cont__link link" href="mailto:info@devstudio.com"><svg class="header__item-cont__link-icon " width="16"
-              height="16">
+          <a class="header__item-cont__link link" href="mailto:info@devstudio.com"><svg
+              class="header__item-cont__link-icon" width="16" height="16">
               <use href="./imeges/icomoon.svg#envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
         <li class="header__item-cont">
           <a class="header__item-cont__link link" href="tel:+380961111111">
-            <svg class="header__item-cont__link-icon " width="16" height="16">
+            <svg class="header__item-cont__link-icon" width="16" height="16">
               <use href="./imeges/icomoon.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
@@ -75,8 +81,22 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-1.jpg" alt="экран ноутбука" width="370"
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-1@1x_d.jpg 1x, 
+                  ./imeges/port/portf-1@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-1@1x_t.jpg 1x, 
+                  ./imeges/port/portf-1@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-1@1x_m.jpg 1x, 
+                  ./imeges/port/portf-1@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-1@1x_m.jpg" alt="экран ноутбука" width="450"
                   height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -95,8 +115,22 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-2.jpg" alt="два баскетболиста боряться за мяч"
-                  width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-2@1x_d.jpg 1x, 
+                  ./imeges/port/portf-2@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-2@1x_t.jpg 1x, 
+                  ./imeges/port/portf-2@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-2@1x_m.jpg 1x, 
+                  ./imeges/port/portf-2@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-2@1x_m.jpg" alt="два баскетболиста боряться за мяч"
+                  width="450" height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -117,8 +151,22 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-3.jpg" alt="логотип рестарана" width="370"
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-3@1x_d.jpg 1x, 
+                  ./imeges/port/portf-3@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-3@1x_t.jpg 1x, 
+                  ./imeges/port/portf-3@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-3@1x_m.jpg 1x, 
+                  ./imeges/port/portf-3@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-3@1x_m.jpg " alt="логотип рестарана" width="450"
                   height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -137,7 +185,21 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-4.jpg" alt="наушники" width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-4@1x_d.jpg 1x, 
+                  ./imeges/port/portf-4@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-4@1x_t.jpg 1x, 
+                  ./imeges/port/portf-4@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-4@1x_m.jpg 1x, 
+                  ./imeges/port/portf-4@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-4@1x_m.jpg " alt="наушники" width="450" height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -156,8 +218,22 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-5.jpg" alt="две коробки" width="370"
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-5@1x_d.jpg 1x, 
+                  ./imeges/port/portf-5@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-5@1x_t.jpg 1x, 
+                  ./imeges/port/portf-5@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-5@1x_m.jpg 1x, 
+                  ./imeges/port/portf-5@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-5@1x_m.jpg" alt="две коробки" width="450"
                   height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -176,7 +252,21 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-6.jpg" alt="монитор" width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-6@1x_d.jpg 1x, 
+                  ./imeges/port/portf-6@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-6@1x_t.jpg 1x, 
+                  ./imeges/port/portf-6@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-6@1x_m.jpg 1x, 
+                  ./imeges/port/portf-6@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-6@1x_m.jpg" alt="монитор" width="450" height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -195,7 +285,21 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-7.jpg" alt="журнал" width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-7@1x_d.jpg 1x, 
+                  ./imeges/port/portf-7@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-7@1x_t.jpg 1x, 
+                  ./imeges/port/portf-7@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-7@1x_m.jpg 1x, 
+                  ./imeges/port/portf-7@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-7@1x_m.jpg " alt="журнал" width="450" height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -214,7 +318,21 @@
           <li class="portfolio__item">
             <a class="link portfolio__link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-8.jpg" alt="бирка" width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-8@1x_d.jpg 1x, 
+                  ./imeges/port/portf-8@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-8@1x_t.jpg 1x, 
+                  ./imeges/port/portf-8@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-8@1x_m.jpg 1x, 
+                  ./imeges/port/portf-8@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-8@1x_m.jpg " alt="бирка" width="450" height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -233,7 +351,21 @@
           <li class="portfolio__item">
             <a class="portfolio__link link" href="">
               <div class="portfolio__overlay-set">
-                <img class="portfolio-img" src="./imeges/portfolio/img-9.jpg" alt="ноутбук" width="370" height="294" />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="
+                  ./imeges/port/portf-9@1x_d.jpg 1x, 
+                  ./imeges/port/portf-9@1x_d.jpg 2x"
+                  />
+                  <source media="(min-width: 768px)" srcset="
+                  ./imeges/port/portf-9@1x_t.jpg 1x, 
+                  ./imeges/port/portf-9@1x_t.jpg 2x"
+                  />
+                  <source media="(min-width: 420px)" srcset="
+                  ./imeges/port/portf-9@1x_m.jpg 1x, 
+                  ./imeges/port/portf-9@2x_m.jpg 2x"
+                  />
+                <img class="portfolio-img" src="./imeges/port/portf-9@1x_m.jpg" alt="ноутбук" width="450" height="294" />
+                </picture>
                 <div class="portfolio__overlay">
                   <p class="portfolio__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -253,6 +385,7 @@
       </div>
     </section>
   </main>
+
   <!-- Footer section -->
   <footer class="footer">
     <div class="container">
@@ -325,6 +458,51 @@
       </div>
     </div>
   </footer>
+  <!--Mobile menu-->
+  <div class="menu-overlay" data-menu>
+    <div class="menu-container">
+      <button class="menu-of__btg mob-menu__btg" type="button" data-menu-close>
+        <svg class="menu-of__icon" width="24px" height="24px">
+          <use href="/imeges/icomoon.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mob-nav__list mob__card-set list">
+        <li class="mob-nav__item">
+          <a class="mob-nav__link link" href="./index.html">Студія</a>
+        </li>
+        <li class="mob-nav__item">
+          <a class="mob-nav__link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mob-nav__item">
+          <a class="mob-nav__link link" href="">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mob-cont__list mob__card-set list">
+        <li class="mob-cont__item">
+          <a class="mob-cont__link link" href="tel:+380961111111">
+           <span class="mob-cont__link--akcent"> +38 096 111 11 11</span></a>
+        </li>
+        <li class="mob-cont__item">
+          <a class="mob-cont__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mob-social__list list">
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">Instagram</a>
+        </li>
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">Twitter</a>
+        </li>
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">Facebook</a>
+        </li>
+        <li class="mob-social__item">
+          <a class="mob-social__link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./js/mobail-menu.js"></script> 
 </body>
 
 </html>

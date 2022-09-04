@@ -9,4 +9,9 @@
 .header__container {
     display: flex;
     align-content: center;
+    @media screen and (max-width: 767px){
+        justify-content: space-between;
+        align-items: center;
+  
+    }
 }

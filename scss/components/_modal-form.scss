@@ -83,8 +83,18 @@
     align-items: center;
     justify-content: center;
     gap: 9px;
-    margin-bottom: 30px;
-    cursor: pointer;
+    margin-bottom: 31px;
+
+    font-size: 12px;
+    line-height: 1.16;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+        cursor: pointer;
+        margin-bottom: 30px;
+
+    }
 }
 
 .form-modal__check-icon__check-icon-of {

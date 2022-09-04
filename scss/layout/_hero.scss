@@ -1,17 +1,38 @@
 .hero {
+
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/imeges/beg/header@1x_m.jpg);
+  background-size: 480px 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-position: center;
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/imeges/home/Img-hirow-mob.jpg);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background: url(/imeges/beg/header@2x_m.jpg);
     background-size: 480px 400px;
-    padding-top:118px;
-    padding-bottom: 118px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   @media screen and (min-width: 768px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
-    background-size: 1600px 600px;
+      url(imeges/beg/header@1x_t.jpg);
+    background-size: 768px 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background: url(/imeges/beg/header@2x_t.jpg);
+      background-size: 768px 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
   }
 
 
@@ -19,10 +40,19 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(https://raw.githubusercontent.com/Mostenskiy/goit-markup-hw-04/main/imeges/home/Img-hirow.jpg);
+      url(/imeges/beg/header@1x_d.jpg);
     background-size: 1600px 600px;
+    background-position: center;
+    background-repeat: no-repeat;
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background: url(/imeges/beg/header@2x_d.jpg);
+      background-size: 1600px 600px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
   }
-
-
 }
