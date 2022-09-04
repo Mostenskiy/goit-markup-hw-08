@@ -19,7 +19,7 @@
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/imeges/beg/header@1x_t.jpg);
+      url(imeges/beg/header@1x_t.jpg);
     background-size: 768px 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
       background: url(/imeges/beg/header@2x_t.jpg);
       background-size: 768px 400px;
       background-position: center;
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
 
     }
   }
@@ -49,9 +49,8 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background: url(/imeges/beg/header@2x_d.jpg);
-      background-size: 1600px 600px;
-      background-position: center;
-      background-repeat: no-repeat;
+      background-size: 1600px 600px;background-position: center;
+    background-repeat: no-repeat;
 
     }
   }
