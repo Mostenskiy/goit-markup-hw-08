@@ -101,6 +101,7 @@ transition: opacity var(--transition-time), visibility var(--transition-time) ;
     &:hover {
         color: var(--color-blue);
     }
+    &--akcent {color: var(--color-blue);}
 }
 
 .mob-cont__link {
@@ -119,6 +120,7 @@ transition: opacity var(--transition-time), visibility var(--transition-time) ;
 
 .mob-social__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 64px;
 }

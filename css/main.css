@@ -490,7 +490,7 @@ section {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  width: 360px;
+  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
@@ -501,7 +501,7 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -516,6 +516,12 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-black);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
 }
 
 .footer-title {
@@ -698,8 +704,8 @@ section {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
+  height: auto;
   border-radius: 4px;
   background-color: #ffffff;
   padding: 40px;
@@ -716,8 +722,8 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    height: auto;
   }
 }
 
@@ -980,7 +986,7 @@ section {
 .footer__kontakt-item:last-child {
   margin-bottom: 0px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__kontakt-item:last-child {
     margin-bottom: 60px;
   }
@@ -1222,6 +1228,9 @@ section {
 .mob-nav__link:hover {
   color: var(--color-blue);
 }
+.mob-nav__link--akcent {
+  color: var(--color-blue);
+}
 
 .mob-cont__link {
   font-weight: 500;
@@ -1239,6 +1248,8 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
   margin-top: 64px;
 }
@@ -1286,59 +1297,70 @@ section {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/imeges/beg/header@1x_m.jpg);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/beg/header@1x_m.jpg);
-  background-size: 480px 400px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/beg/header@1x_m.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/beg/header@1x_m.jpg);
+  height: 400;
+  max-width: 767px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/imeges/beg/header@2x_m.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/beg/header@2x_m.jpg);
-    background-size: 480px 400px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/beg/header@2x_m.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/beg/header@2x_m.jpg);
+    max-width: 767px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(imeges/beg/header@1x_t.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(imeges/beg/header@1x_t.jpg);
-    background-size: 768px 400px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..imeges/beg/header@1x_t.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..imeges/beg/header@1x_t.jpg);
+    max-width: 1199px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/imeges/beg/header@2x_t.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/beg/header@2x_t.jpg);
-    background-size: 768px 400px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/beg/header@2x_t.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/beg/header@2x_t.jpg);
+    max-width: 1199px;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/imeges/beg/header@1x_d.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/beg/header@1x_d.jpg);
-    background-size: 1600px 600px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/beg/header@1x_d.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/beg/header@1x_d.jpg);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/imeges/beg/header@2x_d.jpg);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/beg/header@2x_d.jpg);
-    background-size: 1600px 600px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/beg/header@2x_d.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/beg/header@2x_d.jpg);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -1557,7 +1579,6 @@ section {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     text-align: left;
-    gap: 70px;
   }
 }
 
@@ -1571,7 +1592,7 @@ section {
 }
 @media screen and (min-width: 1200px) {
   .footer__kontakt {
-    margin-right: 0px;
+    margin-right: 70px;
   }
 }
 
@@ -1645,6 +1666,18 @@ section {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .portfolio__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
 
 .portfolio__overlay-set {
   position: relative;
@@ -1697,6 +1730,9 @@ section {
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid var(--color-portfolio-border);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .portfolio__link__title {
